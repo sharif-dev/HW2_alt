@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <Switch
+        android:id="@+id/unlock_on_shake_switch"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Unlock on Shake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shake_sense_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shake Sensitivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unlock_on_shake_switch" />
+
+    <TextView
+        android:id="@+id/shake_sense_textView"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shake_sense_title" />
+
+    <SeekBar
+        android:id="@+id/shake_sense_seekBar"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shake_sense_textView"
+        app:layout_constraintTop_toBottomOf="@+id/shake_sense_title" />
+
+    <Switch
+        android:id="@+id/lock_on_hor_switch"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Lock on Horizental"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shake_sense_seekBar" />
+
+    <TextView
+        android:id="@+id/lock_hor_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horizontal Angle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lock_on_hor_switch" />
+
+    <TextView
+        android:id="@+id/lock_hor_angle_textView"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lock_hor_title" />
+
+    <SeekBar
+        android:id="@+id/lock_hor_angle_seekBar"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lock_hor_angle_textView"
+        app:layout_constraintTop_toBottomOf="@+id/lock_hor_title" />
+</android.support.constraint.ConstraintLayout>
